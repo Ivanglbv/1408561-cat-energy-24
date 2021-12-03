@@ -3,33 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img src="" alt="">
+      <a class="header__logo" href="#">
+        <img src="/img/logo-mobile.png" alt="">
+        <img src="/img/logo 2.svg" alt="">
       </a>
       <nav class="header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
           Открыть меню
         </button>
         <ul class="main-nav__list list">
-          <li class="list__item">
-            <a href="index.html">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="list__item">
-            <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="list__item">
-            <a href="#">Подбор программы</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__text">
+        <h1 class="form__title title">Подбор программы</h1>
+        <p class="form__text text">
           Заполните анкету, и мы подберем
           программу питания для вашего кота
         </p>
@@ -55,13 +57,13 @@
             <ul class="program-selection__list">
               <li class="program-selection__item">
                 <label class="program-selection__caption caption" for="">
-                  <input type="radio" name="goal" value="Похудение" checked>
+                  <input class="program-selection__input input" type="radio" name="goal" value="Похудение" checked>
                   похудение
                 </label>
               </li>
               <li class="program-selection__item">
                 <label class="program-selection__caption caption" for="">
-                  <input type="radio" name="goal" value="Набор массы">
+                  <input class="program-selection__input input" type="radio" name="goal" value="Набор массы">
                   Набор массы
                 </label>
               </li>
@@ -80,7 +82,7 @@
           </legent>
           <p class="contacts__wrapper">
             <label class="contacts__caption caption" for="">E-mail:*
-              <input type="email" name="email" value="kuklachev@gmail.com">
+              <input class="contacts__input input" type="email" name="email" value="kuklachev@gmail.com">
             </label>
           </p>
           <p class="contacts__wrapper">
@@ -93,8 +95,8 @@
           <legent class="comment__title">
             Комментарий
           </legent>
-            <p class="comment__rapper">
-              <input class="comment__input" type="textarea" name="comment" cols="50" value="Расскажите обо всех повадках кота">
+            <p class="comment__wrapper">
+              <input class="comment__input input" type="textarea" name="comment" cols="50" value="Расскажите обо всех повадках кота">
             </p>
         </fieldset>
         <fieldset class="additionally">
@@ -133,44 +135,44 @@
       </form>
     </main>
     <footer class="footer">
-      <div class="wrapper">
-        <section class="contacts">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__text">
+      <section class="footer__contacts">
+        <div class="footer__wrapper wrapper">
+          <h2 class="footer__title title">приглашаем к сотрудничеству дилеров!</h2>
+          <p class="footer__text text">
             ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург
           </p>
-          <div class="contacts__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637940205596!5m2!1sru!2sru"
-              width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-        </section>
-        <section class="footer">
+        </div>
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637940205596!5m2!1sru!2sru"
+            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </section>
+      <section class="footer__desk">
+        <div class="wrapper">
           <a class="footer__logo" href="">
-            <img src="#" alt="">
+            <img src="/img/footer-logo 2.svg" alt="">
           </a>
-          <div class="social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="#">Вконтакте</a>
-              </li>
-              <li class="social__item">
-                <a href="#">Инстаграм</a>
-              </li>
-              <li class="social__item">
-                <a href="#">Фейсбук</a>
-              </li>
-            </ul>
-          </div>
-          <p class="copiright">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#">Вконтакте</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Инстаграм</a>
+            </li>
+            <li class="footer__item">
+              <a href="#">Фейсбук</a>
+            </li>
+          </ul>
+          <p class="footer__copiright text">
             <a href="">HTML Academy</a>
             <img src="#" alt="">
           </p>
-        </section>
-      </div>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
