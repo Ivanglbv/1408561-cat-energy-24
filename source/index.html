@@ -2,19 +2,20 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="wrapper">
+      <div class="wrapper header__wrapper">
         <a class="header__logo" href="#">
-          <img src="/img/logo-mobile.png" alt="">
-          <img src="/img/logo 2.svg" alt="">
+          <img class="header__image-1" src="/img/logo-mobile.png" alt="">
+          <img class="header__image-2" src="/img/logo 2.svg" alt="">
         </a>
         <nav class="header__main-nav main-nav">
           <button class="main-nav__toggle" type="button">
-            Открыть меню
+            <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list list">
             <li class="main-nav__item">
@@ -32,11 +33,9 @@
     </header>
     <main class="main">
       <section class="promo">
-        <div class="wrapper">
-          <div class="promo__wrapper">
-            <h1 class="promo__title title">Функциональное питание для котов</h1>
-            <p class="promo__text">Занялся собой? Займись котом!</p>
-          </div>
+        <div class="wrapper promo__wrapper promo__wrapper--bg">
+          <h1 class="promo__title title">Функциональное питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
           <img class="promo__image" src="/img/index-can-mobile 1.png" alt="">
           <a class="promo__button button">подобрать программу</a>
         </div>
@@ -65,7 +64,7 @@
         </div>
       </section>
       <section class="about-product">
-        <div class="wrapper">
+        <div class="wrapper about-product__wrapper">
           <h2 class="about-product__title title">Как это работает</h2>
           <ul class="about-product__list">
             <li class="about-product__item text">
@@ -94,24 +93,26 @@
         </div>
       </section>
       <section class="example">
-        <div class="wrapper">
-          <h2 class="example__title title">Живой пример</h2>
-          <p class="example__text text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <dl class="example__desk">
-            <div class="example__box">
-              <dt class="example__term">снижение веса</dt>
-              <dd class="example__def">5 КГ</dd>
-            </div>
-            <div class="example__box">
-              <dt class="example__term">затрачено времени</dt>
-              <dd class="example__def">60 ДНЕЙ</dd>
-            </div>
-          </dl>
-          <p class="example__info text">Затраты на питание: 15 000 РУБ.</p>
+        <div class="wrapper exemple__wrapper">
+          <div class="exemple__container">
+            <h2 class="example__title title">Живой пример</h2>
+            <p class="example__text text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+              Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <dl class="example__desk">
+              <div class="example__box">
+                <dt class="example__term">снижение веса</dt>
+                <dd class="example__def">5 КГ</dd>
+              </div>
+              <div class="example__box">
+                <dt class="example__term">затрачено времени</dt>
+                <dd class="example__def">60 ДНЕЙ</dd>
+              </div>
+            </dl>
+            <p class="example__info text">Затраты на питание: 15 000 РУБ.</p>
+          </div>
           <div class="example__slider slider">
             <ul class="slider__list">
               <li class="slider__item">
@@ -138,26 +139,32 @@
           </p>
         </div>
         <div class="footer__map">
-          <iframe
+          <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637940205596!5m2!1sru!2sru"
             width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
       </section>
       <section class="footer__desk">
-        <div class="wrapper">
+        <div class="footer__wrapper-desk wrapper">
           <a class="footer__logo" href="">
             <img src="/img/footer-logo 2.svg" alt="">
           </a>
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#">Вконтакте</a>
+              <a href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
             <li class="footer__item">
-              <a href="#">Инстаграм</a>
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
             <li class="footer__item">
-              <a href="#">Фейсбук</a>
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
           <p class="footer__copiright text">

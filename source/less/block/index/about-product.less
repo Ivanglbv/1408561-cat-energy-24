@@ -3,6 +3,10 @@
   outline-offset: -5px;
 }
 
+.about-product__wrapper {
+
+}
+
 .about-product__title {
   outline: #000000 solid 5px;
   outline-offset: -5px;
@@ -16,4 +20,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-rows: repeat(4, 60px);
+
+  @media (min-width: 768px) {
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-rows: 280px;
+    grid-template-columns: repeat(4, 250px);
+  }
 }
