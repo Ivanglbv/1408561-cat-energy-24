@@ -3,11 +3,29 @@
   outline-offset: -5px;
 }
 
+.programs__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: @desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .programs__item {
   background-color: @basic_grey;
   outline: #008000 solid 5px;
   outline-offset: -5px;
+
+  @media (min-width: @tablet) {
+    max-width: 708px;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 570px;
+  }
 }
 
 .programs__title {

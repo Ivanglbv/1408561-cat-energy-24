@@ -16,4 +16,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-rows: repeat(4, 60px);
+
+  @media (min-width: @tablet) {
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-rows: 280px;
+    grid-template-columns: repeat(4, 250px);
+  }
 }

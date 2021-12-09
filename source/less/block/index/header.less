@@ -3,9 +3,26 @@
   outline-offset: -5px;
 }
 
+.header__wrapper {
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__logo {
   outline: #ff0000 solid 5px;
   outline-offset: -5px;
+  flex-grow: 1;
+
+  @media (min-width: @tablet) {
+    display: block;
+    flex-grow: 0;
+  }
+}
+
+.header__image-2 {
+  width: 101px;
+  height: 18px;
 }
 
 .header__main-nav {

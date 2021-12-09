@@ -4,26 +4,81 @@
 }
 
 .promo__wrapper {
-  background-blend-mode: soft-light;
-  background-image: url("/img/index-background-desktop 2.jpg");
-  background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
+  position: relative;
+  display: grid;
   color: @white;
   outline: #0000ff solid 5px;
   outline-offset: -5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-blend-mode: soft-light;
+    background-image: url("../img/index-background-desktop2.jpg");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 302px;
+    min-width: 320px;
+    z-index: -1;
+
+    @media (min-width: @tablet) {
+      display: none;
+    }
+
+    @media (min-width: @desktop) {
+      display: block;
+      top: -40px;
+      right: 0;
+      left: 720px;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    color: #000000;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .promo__text {
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
 }
 
 .promo__image {
   outline: #0000ff solid 5px;
   outline-offset: -5px;
+
+  @media (min-width: @tablet) {
+    order: 3;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column: 2 / 2;
+    grid-row: 1 / 4;
+  }
 }
 
 .promo__button {
   outline: #0000ff solid 5px;
   outline-offset: -5px;
+  color: @white;
+  background-color: @basic_green;
+  width: 280px;
+  height: 54px;
+  text-align: center;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    width: 244px;
+  }
 }

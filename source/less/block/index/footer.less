@@ -15,11 +15,28 @@
   &--bg {
     background-color: @white;
   }
+
+  @media (min-width: @desktop) {
+    position: relative;
+  }
 }
 
 .footer__wrapper {
   outline: #0000ff solid 5px;
   outline-offset: -5px;
+  min-height: 112px;
+
+  @media (min-width: @desktop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: @white;
+  }
+}
+
+.footer__wrapper-map {
+  width: 100%;
+  min-width: 320px;
 }
 
 .footer__desk {
@@ -27,12 +44,30 @@
   outline-offset: -10px;
 }
 
+.footer__wrapper-desk {
+  display: flex;
+  flex-wrap: wrap;
+  height: 236px;
+
+  @media (min-width: @tablet) {
+    justify-content: space-between;
+  }
+}
+
 .footer__list {
   outline: #ff0000 solid 5px;
   outline-offset: -5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__copiright {
   font-size: 16px;
   line-height: 18px;
+}
+
+.footer__map {
+  width: 100%;
+  min-width: 320px;
 }
