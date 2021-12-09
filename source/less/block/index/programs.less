@@ -8,7 +8,7 @@
   margin: 0;
   list-style: none;
 
-  @media (min-width: 1240px) {
+  @media (min-width: @desktop) {
     display: flex;
     justify-content: space-between;
   }
@@ -19,11 +19,11 @@
   outline: #008000 solid 5px;
   outline-offset: -5px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     max-width: 708px;
   }
 
-  @media (min-width: 1240px) {
+  @media (min-width: @desktop) {
     max-width: 570px;
   }
 }

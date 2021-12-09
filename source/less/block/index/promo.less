@@ -17,7 +17,7 @@
     right: 0;
     left: 0;
     background-blend-mode: soft-light;
-    background-image: url("/img/index-background-desktop 2.jpg");
+    background-image: url("/img/index-background-desktop2.jpg");
     background-color: rgba(104, 183, 56, 0.85);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,11 +26,11 @@
     min-width: 320px;
     z-index: -1;
 
-    @media (min-width: 768px) {
+    @media (min-width: @tablet) {
       display: none;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: @desktop) {
       display: block;
       top: -40px;
       right: 0;
@@ -39,11 +39,11 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     color: #000000;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -58,11 +58,11 @@
   outline: #0000ff solid 5px;
   outline-offset: -5px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     order: 3;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: @desktop) {
     grid-column: 2 / 2;
     grid-row: 1 / 4;
   }
@@ -78,7 +78,7 @@
   text-align: center;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     width: 244px;
   }
 }

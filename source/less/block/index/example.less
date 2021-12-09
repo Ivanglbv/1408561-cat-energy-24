@@ -6,7 +6,7 @@
 .exemple__wrapper {
   display: grid;
 
-  @media (min-width: 1280px) {
+  @media (min-width: @desktop) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     max-width: 500px;
   }
 }
@@ -58,7 +58,7 @@
   outline: #ff0000 solid 5px;
   outline-offset: -5px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     max-width: 600px;
   }
 }
