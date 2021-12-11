@@ -1,6 +1,11 @@
 .other-product {
   outline: #000000 solid 5px;
   outline-offset: -5px;
+
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .other-product__title {
