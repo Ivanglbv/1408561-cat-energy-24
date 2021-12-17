@@ -1,14 +1,5 @@
 .footer {
-  outline: #000000 solid 5px;
-  outline-offset: -5px;
   background-color: @basic_grey;
-}
-
-.footer__title {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
 }
 
 .footer__contacts {
@@ -22,15 +13,53 @@
 }
 
 .footer__wrapper {
-  outline: #0000ff solid 5px;
-  outline-offset: -5px;
   min-height: 112px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: @desktop) {
     position: absolute;
     top: 95px;
     left: 110px;
     background-color: @white;
+    padding: 0;
+  }
+}
+
+.footer__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  width: 139px;
+  padding: 26px 0;
+
+  @media (min-width: @tablet) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 56px 40px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 56px 80px;
+  }
+}
+
+.footer__text {
+  padding: 26px 0;
+  width: 141px;
+
+  @media (min-width: @tablet) {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 56px 40px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 56px 80px;
   }
 }
 
@@ -39,9 +68,14 @@
   min-width: 320px;
 }
 
-.footer__desk {
-  outline: #0000ff solid 5px;
-  outline-offset: -10px;
+.footer__map {
+  width: 100%;
+  min-width: 320px;
+  height: 362px;
+
+  @media (min-width: @tablet) {
+    height: 400px;
+  }
 }
 
 .footer__wrapper-desk {
@@ -51,23 +85,58 @@
 
   @media (min-width: @tablet) {
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 147px;
+  }
+}
+
+.footer__logo {
+  padding: 39px 76px 32px;
+
+  @media (min-width: @tablet) {
+    padding: 0;
   }
 }
 
 .footer__list {
-  outline: #ff0000 solid 5px;
-  outline-offset: -5px;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61px;
+  flex-basis: 280px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet) {
+    height: 33px;
+    flex-basis: 129px;
+    border: none;
+  }
+}
+
+.footer__item {
+  margin: 0 auto;
 }
 
 .footer__copiright {
-  font-size: 16px;
-  line-height: 18px;
+  display: contents;
+  padding-top: 22px;
+
+  @media (min-width: @tablet) {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.footer__map {
-  width: 100%;
-  min-width: 320px;
+.footer__image:first-child {
+  margin-right: 140px;
+
+  @media (min-width: @tablet) {
+    margin-right: 22px;
+  }
 }

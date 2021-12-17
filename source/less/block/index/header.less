@@ -1,31 +1,30 @@
-.header {
-  outline: #008000 solid 5px;
-  outline-offset: -5px;
-}
-
 .header__wrapper {
-  height: 38px;
+  min-height: 65px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    align-items: start;
+  }
 }
 
 .header__logo {
-  outline: #ff0000 solid 5px;
-  outline-offset: -5px;
-  flex-grow: 1;
+  display: flex;
 
   @media (min-width: @tablet) {
-    display: block;
-    flex-grow: 0;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 53px;
   }
 }
 
 .header__image-2 {
-  width: 101px;
-  height: 18px;
-}
+  margin-left: 60px;
 
-.header__main-nav {
-  outline: #ff0000 solid 5px;
-  outline-offset: -5px;
+  @media (min-width: @tablet) {
+    margin-left: 12px;
+  }
 }
