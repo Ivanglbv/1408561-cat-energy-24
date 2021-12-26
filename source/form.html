@@ -25,7 +25,7 @@
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--active" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -39,108 +39,121 @@
             Заполните анкету, и мы подберем
             программу питания для вашего кота
           </p>
+        </div>
           <section class="questionary">
-            <div class="information">
-              <p class="information__name">
+            <div class="information wrapper">
+              <p class="information__wrap">
                 <label class="information__caption caption" for="">ИМЯ:*
-                  <input class="information__input input" type="text" name="name" value="Барсик">
+                  <input class="information__input-name input" type="text" name="name" value="Барсик">
                 </label>
               </p>
-              <p class="information__weight">
+              <p class="information__wrap">
                 <label class="information__caption caption" for="">Вес (кг):*
-                  <input class="information__input input" type="number" name="weight" value="7">
+                  <input class="information__input-weight input" type="number" name="weight" value="7">
                 </label>
               </p>
-              <p class="information__age">
+              <p class="information__wrap">
                 <label class="information__caption caption" for="">Возраст (лет):
-                  <input class="information__input input" type="number" name="age" value="7">
+                  <input class="information__input-age input" type="number" name="age" value="7">
                 </label>
               </p>
             </div>
             <fieldset class="program-selection">
-              <ul class="program-selection__list">
-                <li class="program-selection__item">
-                  <label class="program-selection__caption caption" for="">
-                    <input class="program-selection__input input" type="radio" name="goal" value="Похудение" checked>
-                    похудение
-                  </label>
-                </li>
-                <li class="program-selection__item">
-                  <label class="program-selection__caption caption" for="">
-                    <input class="program-selection__input input" type="radio" name="goal" value="Набор массы">
-                    Набор массы
-                  </label>
-                </li>
-                <li class="program-selection__item">
-                  <label class="program-selection__caption caption" for="">
-                    <input class="program-selection__input input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">
-                    Не знаю (Нужен ваш совет)
-                  </label>
-                </li>
-              </ul>
+              <div class="program-selection__wrapper wrapper">
+                <ul class="program-selection__list">
+                  <li class="program-selection__item">
+                    <label class="program-selection__caption caption">
+                      <input class="program-selection__input input" type="radio" name="goal" value="Похудение" checked>
+                      <span class="program-selection__radio"></span>
+                      похудение
+                    </label>
+                  </li>
+                  <li class="program-selection__item">
+                    <label class="program-selection__caption caption">
+                      <input class="program-selection__input input" type="radio" name="goal" value="Набор массы">
+                      <span class="program-selection__radio"></span>
+                      Набор массы
+                    </label>
+                  </li>
+                  <li class="program-selection__item">
+                    <label class="program-selection__caption caption">
+                      <input class="program-selection__input input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">
+                      <span class="program-selection__radio"></span>
+                      Не знаю (Нужен ваш совет)
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
           </section>
           <fieldset class="contacts">
-            <legent class="contacts__title">
-              Контактные данные (владельца кота)
-            </legent>
-            <div class="contacts__container">
-              <p class="contacts__wrapper">
-                <label class="contacts__caption caption" for="">E-mail:*
-                  <input class="contacts__input input" type="email" name="email" value="kuklachev@gmail.com">
-                </label>
-              </p>
-              <p class="contacts__wrapper">
-                <label class="contacts__caption caption" for="">Телефон:*
-                  <input class="contacts__input input" type="tel" name="telephone" value="8 (960) 900-60-90">
-                </label>
-              </p>
+            <div class="contacts__wrapper wrapper">
+              <legent class="contacts__title">
+                Контактные данные (владельца кота)
+              </legent>
+              <div class="contacts__container">
+                <p class="contacts__wrap">
+                  <label class="contacts__caption caption" for="">E-mail:*
+                    <input class="contacts__input input" type="email" name="email" value="kuklachev@gmail.com">
+                  </label>
+                </p>
+                <p class="contacts__wrap">
+                  <label class="contacts__caption caption" for="">Телефон:*
+                    <input class="contacts__input input" type="tel" name="telephone" value="8 (960) 900-60-90">
+                  </label>
+                </p>
+              </div>
             </div>
           </fieldset>
           <fieldset class="comment">
-            <legent class="comment__title">
-              Комментарий
-            </legent>
-              <p class="comment__wrapper">
-                <input class="comment__input input" type="textarea" name="comment" cols="50" value="Расскажите обо всех повадках кота">
-              </p>
+            <div class="comment__wrapper wrapper">
+              <legent class="comment__title">
+                Комментарий
+              </legent>
+              <textarea class="comment__textarea">Расскажите обо всех повадках кота</textarea>
+            </div>
           </fieldset>
           <fieldset class="additionally">
-            <legent class="additionally__title">
-              Дополнительно
-            </legent>
-            <ul class="additionally__list">
-              <li class="additionally__item">
-                <label class="additionally__caption caption" for="">
-                  <input class="additionally__input input" type="checkbox" name="product" value="sweetener" checked>
-                  сахарозаменитель
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__caption caption" for="">
-                  <input class="additionally__input input" type="checkbox" name="product" value="water">
-                  питьевая вода
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__caption caption" for="">
-                  <input class="additionally__input input" type="checkbox" name="product" value="milk">
-                  молоко
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__caption caption" for="">
-                  <input class="additionally__input input" type="checkbox" name="product" value="vitamins">
-                  витамины
-                </label>
-              </li>
-            </ul>
+            <div class="additionally__wrapper wrapper">
+              <legent class="additionally__title">
+                Дополнительно
+              </legent>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <label class="additionally__caption caption" for="">
+                    <input class="additionally__input input" type="checkbox" name="product" value="sweetener" checked>
+                    <span class="additionally__checkbox"></span>
+                    сахарозаменитель
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__caption caption" for="">
+                    <input class="additionally__input input" type="checkbox" name="product" value="water">
+                    <span class="additionally__checkbox"></span>
+                    питьевая вода
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__caption caption" for="">
+                    <input class="additionally__input input" type="checkbox" name="product" value="milk">
+                    <span class="additionally__checkbox"></span>
+                    молоко
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__caption caption" for="">
+                    <input class="additionally__input input" type="checkbox" name="product" value="vitamins">
+                    <span class="additionally__checkbox"></span>
+                    витамины
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <div class="form__container">
-            <button class="form__button" type="submit">отправить заявку</button>
+          <div class="form__container wrapper">
+            <button class="form__button button" type="submit">отправить заявку</button>
             <small class="form__required">* — Обязательные поля</small>
           </div>
-        </div>
       </form>
     </main>
     <footer class="footer">
@@ -163,29 +176,29 @@
       <section class="footer__desk">
         <div class="footer__wrapper-desk wrapper">
           <a class="footer__logo" href="">
-            <img src="img/footer-logo 2.svg" alt="">
+            <img src="img/footer-logo 2.svg" width="129" height="24" alt="">
           </a>
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#">
-                <span class="visually-hidden">Вконтакте</span>
+                <img src="img/icon_vkontakte.svg" alt="Вконтакте">
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <span class="visually-hidden">Инстаграм</span>
+                <img src="img/icon_instagram.svg" alt="Инстаграм">
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <span class="visually-hidden">Инстаграм</span>
+                <img src="img/icon_facebook.svg" alt="Фейсбук">
               </a>
             </li>
           </ul>
-          <p class="footer__copiright text">
-            <a href="">HTML Academy</a>
-            <img src="#" alt="">
-          </p>
+          <a class="footer__copiright" href="">
+            <img class="footer__image" src="img/HTML Academy.svg" alt="Логотип Html Academy">
+            <img class="footer__image" src="img/Лого_html 1.svg" alt="Логотип Html Academy">
+          </a>
         </div>
       </section>
     </footer>

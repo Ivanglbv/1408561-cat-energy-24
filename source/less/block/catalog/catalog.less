@@ -1,11 +1,27 @@
 .catalog {
-  outline: #ff0000 solid 5px;
-  outline-offset: -5px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+  }
 }
 
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 60px;
+
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 65px;
+    padding-bottom: 160px;
+  }
 }
 
 .catalog__list {
@@ -16,15 +32,38 @@
 
   @media (min-width: @tablet) {
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 140px;
   }
 
   @media (min-width: @desktop) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
-.catalog__cart {
-  outline: #008000 solid 5px;
-  outline-offset: -5px;
+.catalog__item {
+  padding-bottom: 44px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    min-width: 320px;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+
+  @media (min-width: @tablet) {
+    height: 430px;
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
 }
