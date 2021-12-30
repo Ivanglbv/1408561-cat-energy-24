@@ -4,6 +4,8 @@
 
 .promo__wrapper {
   position: relative;
+  color: @white;
+  display: grid;
 
   &::after {
     content: "";
@@ -12,7 +14,7 @@
     right: 0;
     left: 0;
     background-blend-mode: soft-light;
-    background-image: url("../img/index-background-desktop2.jpg");
+    background-image: url("../img/index-background-mobile.jpg");
     background-color: rgba(104, 183, 56, 0.85);
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,33 +23,37 @@
     min-width: 320px;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
     @media (min-width: @tablet) {
       display: none;
     }
 
     @media (min-width: @desktop) {
       display: block;
-      top: -110px;
+      top: -120px;
       right: 0;
-      left: 720px;
+      left: 50%;
       bottom: 0;
-      background-image: url("../img/index-background-desktop 1.jpg");
+      background-image: url("../img/index-background-desktop.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
-}
-
-.promo__container {
-  color: @white;
-  display: grid;
 
   @media (min-width: @tablet) {
-    color: #000000;
-    padding-left: 87px;
+    justify-items: flex-start;
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 41% 1fr;
     grid-template-rows: 250px 50px 1fr;
+    margin-bottom: 82px;
+    padding-bottom: 183px;
   }
 }
 
@@ -64,6 +70,8 @@
     text-align: left;
     width: 414px;
     grid-column: 1 / 2;
+    color: #000000;
+    margin-left: 87px;
   }
 
   @media (min-width: @desktop) {
@@ -86,6 +94,8 @@
     line-height: 20px;
     text-align: left;
     grid-column: 1 / 2;
+    color: #000000;
+    margin-left: 87px;
   }
 
   @media (min-width: @desktop) {
@@ -97,15 +107,16 @@
   margin-top: 20px;
 
   @media (min-width: @tablet) {
+    width: 709px;
     height: 609px;
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    margin-top: -80px;
   }
 
   @media (min-width: @desktop) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-    padding-left: 365px;
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    margin-left: -50px;
   }
 }
 
@@ -119,10 +130,9 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 49px;
+    margin-left: 87px;
     padding: 14px 26px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    width: 192px;
-    height: 26px;
   }
 }
