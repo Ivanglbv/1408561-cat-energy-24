@@ -9,7 +9,7 @@
   <body class="page__body">
     <header class="header">
       <div class="wrapper header__wrapper">
-        <a class="header__logo" href="#">
+        <a class="header__link-logo" href="#">
           <picture>
             <source media="(min-width: 1400px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -36,58 +36,62 @@
     </header>
     <main class="main">
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="wrapper">
-          <h1 class="form__title title">Подбор программы</h1>
-          <p class="form__text text">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
-          </p>
-        </div>
+        <section class="form__promo">
+          <div class="form__wrapper wrapper">
+            <h1 class="form__title title">Подбор программы</h1>
+            <p class="form__text text">
+              Заполните анкету, и мы подберем
+              программу питания для вашего кота
+            </p>
+          </div>
+        </section>
           <section class="questionary">
-            <div class="information wrapper">
-              <p class="information__wrap">
-                <label class="information__caption caption" for="">ИМЯ:*
-                  <input class="information__input-name input" type="text" name="name" value="Барсик">
-                </label>
-              </p>
-              <p class="information__wrap">
-                <label class="information__caption caption" for="">Вес (кг):*
-                  <input class="information__input-weight input" type="number" name="weight" value="7">
-                </label>
-              </p>
-              <p class="information__wrap">
-                <label class="information__caption caption" for="">Возраст (лет):
-                  <input class="information__input-age input" type="number" name="age" value="7">
-                </label>
-              </p>
+            <div class="questionary__wrapper wrapper">
+              <fieldset class="information">
+                <p class="information__wrap">
+                  <label class="information__caption caption" for="">ИМЯ:*
+                    <input class="information__input-name input" type="text" name="name" value="Барсик">
+                  </label>
+                </p>
+                <p class="information__wrap">
+                  <label class="information__caption caption" for="">Вес (кг):*
+                    <input class="information__input-weight input" type="number" name="weight" value="7">
+                  </label>
+                </p>
+                <p class="information__wrap">
+                  <label class="information__caption caption" for="">Возраст (лет):
+                    <input class="information__input-age input" type="number" name="age" value="7">
+                  </label>
+                </p>
+              </fieldset>
+              <fieldset class="program-selection">
+                <div class="program-selection__wrapper">
+                  <ul class="program-selection__list">
+                    <li class="program-selection__item">
+                      <label class="program-selection__caption caption program-selection__caption--disabled">
+                        <input class="program-selection__input input" type="radio" name="goal" value="Похудение" checked>
+                        <span class="program-selection__radio"></span>
+                        похудение
+                      </label>
+                    </li>
+                    <li class="program-selection__item">
+                      <label class="program-selection__caption caption">
+                        <input class="program-selection__input input" type="radio" name="goal" value="Набор массы">
+                        <span class="program-selection__radio"></span>
+                        Набор массы
+                      </label>
+                    </li>
+                    <li class="program-selection__item">
+                      <label class="program-selection__caption caption">
+                        <input class="program-selection__input input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">
+                        <span class="program-selection__radio"></span>
+                        Не знаю (Нужен ваш совет)
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </fieldset>
             </div>
-            <fieldset class="program-selection">
-              <div class="program-selection__wrapper wrapper">
-                <ul class="program-selection__list">
-                  <li class="program-selection__item">
-                    <label class="program-selection__caption caption">
-                      <input class="program-selection__input input" type="radio" name="goal" value="Похудение" checked>
-                      <span class="program-selection__radio"></span>
-                      похудение
-                    </label>
-                  </li>
-                  <li class="program-selection__item">
-                    <label class="program-selection__caption caption">
-                      <input class="program-selection__input input" type="radio" name="goal" value="Набор массы">
-                      <span class="program-selection__radio"></span>
-                      Набор массы
-                    </label>
-                  </li>
-                  <li class="program-selection__item">
-                    <label class="program-selection__caption caption">
-                      <input class="program-selection__input input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">
-                      <span class="program-selection__radio"></span>
-                      Не знаю (Нужен ваш совет)
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
           </section>
           <fieldset class="contacts">
             <div class="contacts__wrapper wrapper">
@@ -98,11 +102,17 @@
                 <p class="contacts__wrap">
                   <label class="contacts__caption caption" for="">E-mail:*
                     <input class="contacts__input input" type="email" name="email" value="kuklachev@gmail.com">
+                    <svg class="contacts__icon-email" width="19" height="14">
+                      <use xlink:href="img/sprite.svg#icon-email"></use>
+                    </svg>
                   </label>
                 </p>
                 <p class="contacts__wrap">
                   <label class="contacts__caption caption" for="">Телефон:*
                     <input class="contacts__input input" type="tel" name="telephone" value="8 (960) 900-60-90">
+                    <svg class="contacts__icon-phone" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
+                    </svg>
                   </label>
                 </p>
               </div>
@@ -124,14 +134,14 @@
               <ul class="additionally__list">
                 <li class="additionally__item">
                   <label class="additionally__caption caption" for="">
-                    <input class="additionally__input input" type="checkbox" name="product" value="sweetener" checked>
+                    <input class="additionally__input input" type="checkbox" name="product" value="sweetener">
                     <span class="additionally__checkbox"></span>
                     сахарозаменитель
                   </label>
                 </li>
                 <li class="additionally__item">
                   <label class="additionally__caption caption" for="">
-                    <input class="additionally__input input" type="checkbox" name="product" value="water">
+                    <input class="additionally__input input" type="checkbox" name="product" value="water" checked>
                     <span class="additionally__checkbox"></span>
                     питьевая вода
                   </label>
@@ -144,7 +154,7 @@
                   </label>
                 </li>
                 <li class="additionally__item">
-                  <label class="additionally__caption caption" for="">
+                  <label class="additionally__caption caption additionally__caption--disabled" for="">
                     <input class="additionally__input input" type="checkbox" name="product" value="vitamins">
                     <span class="additionally__checkbox"></span>
                     витамины

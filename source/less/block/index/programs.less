@@ -4,8 +4,10 @@
   list-style: none;
 
   @media (min-width: @desktop) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 70px;
   }
 }
 
@@ -27,8 +29,9 @@
     background-size: cover;
 
     @media (min-width: @tablet) {
-      top: 81px;
-      left: 446px;
+      top: 21%;
+      left: auto;
+      right: 62px;
       width: 200px;
       height: 211px;
     }
@@ -49,8 +52,9 @@
     left: 13px;
 
     @media (min-width: @tablet) {
-      top: 91px;
-      left: 412px;
+      top: 25%;
+      left: auto;
+      right: 28px;
       width: 268px;
       height: 200px;
     }
@@ -65,11 +69,19 @@
 
   @media (min-width: @tablet) {
     margin: 0;
-    max-width: 708px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
   }
 
   @media (min-width: @desktop) {
-    max-width: 570px;
+    margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
 
@@ -117,19 +129,31 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
-  padding-top: 38px;
-  padding-left: 20px;
+  margin-top: 38px;
+  margin-left: 20px;
   padding-bottom: 18px;
   text-decoration: none;
+  background-image: url("../img/icon_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 110px 2px;
+
+  &:hover {
+    background-image: url("../img/icon_arrow1.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon_arrow1.svg");
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet) {
-    padding-top: 48px;
-    padding-left: 52px;
+    margin-top: 48px;
+    margin-left: 52px;
     padding-bottom: 53px;
   }
 
   @media (min-width: @desktop) {
-    padding-top: 23px;
+    margin-top: 23px;
     padding-bottom: 55px;
   }
 }

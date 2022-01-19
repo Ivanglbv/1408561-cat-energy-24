@@ -1,11 +1,6 @@
 .promo {
   min-width: 320px;
-}
-
-.promo__wrapper {
   position: relative;
-  color: @white;
-  display: grid;
 
   &::after {
     content: "";
@@ -34,16 +29,20 @@
     @media (min-width: @desktop) {
       display: block;
       top: -120px;
-      right: 0;
       left: 50%;
       bottom: 0;
       background-image: url("../img/index-background-desktop.jpg");
-    }
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
+}
+
+.promo__wrapper {
+  color: @white;
+  display: grid;
 
   @media (min-width: @tablet) {
     justify-items: flex-start;
@@ -100,6 +99,15 @@
 
   @media (min-width: @desktop) {
     grid-row: 2 / 3;
+  }
+}
+
+.promo__container-image {
+  margin: 0;
+  justify-self: center;
+
+  @media (min-width: @tablet) {
+    justify-self: start;
   }
 }
 
