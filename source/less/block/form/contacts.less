@@ -78,7 +78,6 @@
 
 .contacts__input {
   height: 43px;
-  border: 1px solid #d9d9d9;
   flex-grow: 1;
 
   @media (min-width: @tablet) {
@@ -116,10 +115,7 @@
 .contacts__icon-email {
   top: 16px;
   right: 16px;
-
-  &:focus {
-    fill: #68b738;
-  }
+  stroke: #222222;
 
   @media (min-width: @tablet) {
     top: 19px;
@@ -130,6 +126,7 @@
 .contacts__icon-phone {
   top: 13px;
   right: 13px;
+  fill: #222222;
 
   @media (min-width: @tablet) {
     top: 16px;
@@ -137,11 +134,18 @@
   }
 }
 
-input:focus + .contacts__icon-email {
+.input:focus + .contacts__icon-email {
   stroke: #68b738;
+}
+
+.input:focus + .contacts__icon-phone {
   fill: #68b738;
 }
 
-input:focus + .contacts__icon-phone {
-  stroke: #68b738;
+.input--erorr + .contacts__icon-email {
+  stroke: #ff8282;
+}
+
+.input--erorr + .contacts__icon-phone {
+  fill: #ff8282;
 }

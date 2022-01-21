@@ -255,64 +255,66 @@
         </div>
       </section>
       <section class="other-product">
-        <div class="other-product__wrapper wrapper">
+        <div class="wrapper">
           <h2 class="other-product__title title">Дополнительные товары</h2>
-          <ul class="other-product__list">
-            <li class="other-product__item">
-                <h3 class="other-product__caption">
-                  Сахарозаменитель
-                </h3>
-                <dl class="other-product__items">
-                  <dt class="other-product__term">1 упаковка (100 г)</dt>
-                  <dd class="other-product__def">200 Р.</dd>
-                </dl>
-                <button class="other-product__button button" type="button">
-                  заказать
-                </button>
-            </li>
-            <li class="other-product__item">
-                <h3 class="other-product__caption">
-                  питьевая вода
-                </h3>
-                <dl class="other-product__items">
-                  <dt class="other-product__term">5 литров</dt>
-                  <dd class="other-product__def">50 Р.</dd>
-                </dl>
-                <button class="other-product__button button" type="button">
-                  заказать
-                </button>
-            </li>
-            <li class="other-product__item">
-                <h3 class="other-product__caption">
-                  молоко
-                </h3>
-                <dl class="other-product__items">
-                  <dt class="other-product__term">1 литр</dt>
-                  <dd class="other-product__def">100 Р.</dd>
-                </dl>
-                <button class="other-product__button button" type="button">
-                  заказать
-                </button>
-            </li>
-            <li class="other-product__item">
-                <h3 class="other-product__caption">
-                  витамины
-                </h3>
-                <dl class="other-product__items">
-                  <dt class="other-product__term">1 упаковка (30 г)</dt>
-                  <dd class="other-product__def">300 Р.</dd>
-                </dl>
-                <button class="other-product__button button" type="button">
-                  заказать
-                </button>
-            </li>
-          </ul>
-          <div class="other-product__present">
-            <p class="other-product__present-text text">
-              Закажите все
-              и получите чехол для
-              кота в подарок!
-            </p>
+          <div class="other-product__wrapper">
+            <ul class="other-product__list">
+              <li class="other-product__item">
+                  <h3 class="other-product__caption">
+                    Сахарозаменитель
+                  </h3>
+                  <dl class="other-product__items">
+                    <dt class="other-product__term">1 упаковка (100 г)</dt>
+                    <dd class="other-product__def">200 Р.</dd>
+                  </dl>
+                  <button class="other-product__button button" type="button">
+                    заказать
+                  </button>
+              </li>
+              <li class="other-product__item">
+                  <h3 class="other-product__caption">
+                    питьевая вода
+                  </h3>
+                  <dl class="other-product__items">
+                    <dt class="other-product__term">5 литров</dt>
+                    <dd class="other-product__def">50 Р.</dd>
+                  </dl>
+                  <button class="other-product__button button" type="button">
+                    заказать
+                  </button>
+              </li>
+              <li class="other-product__item">
+                  <h3 class="other-product__caption">
+                    молоко
+                  </h3>
+                  <dl class="other-product__items">
+                    <dt class="other-product__term">1 литр</dt>
+                    <dd class="other-product__def">100 Р.</dd>
+                  </dl>
+                  <button class="other-product__button button" type="button">
+                    заказать
+                  </button>
+              </li>
+              <li class="other-product__item">
+                  <h3 class="other-product__caption">
+                    витамины
+                  </h3>
+                  <dl class="other-product__items">
+                    <dt class="other-product__term">1 упаковка (30 г)</dt>
+                    <dd class="other-product__def">300 Р.</dd>
+                  </dl>
+                  <button class="other-product__button button" type="button">
+                    заказать
+                  </button>
+              </li>
+            </ul>
+            <div class="other-product__present">
+              <p class="other-product__present-text text">
+                Закажите все
+                и получите чехол для
+                кота в подарок!
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -336,29 +338,41 @@
       </section>
       <section class="footer__desk">
         <div class="footer__wrapper-desk wrapper">
-          <a class="footer__logo" href="">
-            <img src="img/footer-logo 2.svg" width="129" height="24" alt="">
+          <a class="footer__logo" href="#">
+            <svg width="128" height="24">
+              <use xlink:href="img/sprite.svg#footer-logo"></use>
+            </svg>
           </a>
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#">
-                <img src="img/icon_vkontakte.svg" alt="Вконтакте">
+                <svg class="footer__icon-vk" width="23" height="16">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <img src="img/icon_instagram.svg" alt="Инстаграм">
+                <svg class="footer__icon-inst" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-inst"></use>
+                </svg>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <img src="img/icon_facebook.svg" alt="Фейсбук">
+                <svg class="footer__icon-fb" width="22" height="22" fill="none">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
-          <a class="footer__copiright" href="">
-            <img class="footer__image" src="img/HTML Academy.svg" alt="Логотип Html Academy">
-            <img class="footer__image" src="img/Лого_html 1.svg" alt="Логотип Html Academy">
+          <a class="footer__copiright" href="#">
+            <svg class="footer__copiright-logo" width="113" height="16">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+            <svg class="footer__copiright-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </section>

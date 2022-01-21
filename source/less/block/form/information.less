@@ -37,8 +37,6 @@
 .information__input-age {
   height: 44px;
   margin-left: 10px;
-  border: 1px solid #d9d9d9;
-  color: @special_dark-grey;
   flex-grow: 1;
 
   &[type="text"] {
@@ -47,6 +45,11 @@
 
   &[type="number"] {
     padding-left: 15px;
+  }
+
+  &[type=number]::-webkit-inner-spin-button,
+  &[type=number]::-webkit-outer-spin-button {
+    appearance: none;
   }
 
   @media (min-width: @tablet) {
