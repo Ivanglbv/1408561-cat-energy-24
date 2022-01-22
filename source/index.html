@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/favicons/apple.png">
+    <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/favicon/apple.png">
   </head>
   <body class="page__body">
     <header class="header">
@@ -43,11 +43,13 @@
         <div class="wrapper promo__wrapper promo__wrapper--bg">
           <h1 class="promo__title title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1400px)" srcset="img/index-promo-desktop.png 1x, img/index-promo-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png 1x, img/index-promo-tablet@2x.png 2x">
-            <img class="promo__image" srcset="img/index-promo-mobile.png, img/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт Энерджи">
-          </picture>
+          <p class="promo__container-image">
+            <picture>
+              <source media="(min-width: 1400px)" srcset="img/index-promo-desktop.png 1x, img/index-promo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png 1x, img/index-promo-tablet@2x.png 2x">
+              <img class="promo__image" srcset="img/index-promo-mobile.png, img/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт Энерджи">
+            </picture>
+          </p>
           <a class="promo__button button" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -176,29 +178,41 @@
       </section>
       <section class="footer__desk">
         <div class="footer__wrapper-desk wrapper">
-          <a class="footer__logo" href="">
-            <img src="img/footer-logo 2.svg" width="129" height="24" alt="">
+          <a class="footer__logo" href="#">
+            <svg width="128" height="24">
+              <use xlink:href="img/sprite.svg#footer-logo"></use>
+            </svg>
           </a>
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#">
-                <img src="img/icon_vkontakte.svg" alt="Вконтакте">
+                <svg class="footer__icon-vk" width="23" height="16">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <img src="img/icon_instagram.svg" alt="Инстаграм">
+                <svg class="footer__icon-inst" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-inst"></use>
+                </svg>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <img src="img/icon_facebook.svg" alt="Фейсбук">
+                <svg class="footer__icon-fb" width="22" height="22" fill="none">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
-          <a class="footer__copiright" href="">
-            <img class="footer__image" src="img/HTML Academy.svg" alt="Логотип Html Academy">
-            <img class="footer__image" src="img/Лого_html 1.svg" alt="Логотип Html Academy">
+          <a class="footer__copiright" href="#">
+            <svg class="footer__copiright-logo" width="113" height="16">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+            <svg class="footer__copiright-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </section>

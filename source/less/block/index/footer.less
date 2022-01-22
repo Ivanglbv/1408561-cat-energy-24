@@ -79,11 +79,11 @@
 }
 
 .footer__wrapper-desk {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   height: 236px;
 
   @media (min-width: @tablet) {
+    display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
@@ -92,7 +92,16 @@
 }
 
 .footer__logo {
-  padding: 39px 76px 32px;
+  justify-self: center;
+  padding: 39px 0 32px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet) {
     padding: 0;
@@ -122,21 +131,67 @@
   margin: 0 auto;
 }
 
-.footer__copiright {
-  display: contents;
-  padding-top: 22px;
-
+.footer__icon-vk {
   @media (min-width: @tablet) {
-    display: block;
-    padding: 0;
-    margin: 0;
+    width: 30px;
+    height: 22px;
   }
 }
 
-.footer__image:first-child {
-  margin-right: 140px;
+.footer__icon-inst {
+  @media (min-width: @tablet) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.footer__icon-fb {
+  @media (min-width: @tablet) {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.footer__icon-vk,
+.footer__icon-inst,
+.footer__icon-fb {
+  color: @special_grey-2;
+
+  &:hover {
+    color: @basic_green;
+  }
+
+  &:active {
+    color: @basic_green;
+    opacity: 0.3;
+  }
+}
+
+.footer__copiright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copiright-logo {
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet) {
     margin-right: 22px;
+  }
+}
+
+.footer__copiright-icon {
+  color: @special_grey-2;
+
+  &:hover {
+    color: @basic_green;
+  }
+
+  &:active {
+    color: @basic_green;
+    opacity: 0.3;
   }
 }

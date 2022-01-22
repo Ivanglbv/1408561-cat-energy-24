@@ -2,30 +2,48 @@
   padding: 0;
   margin: 0;
   border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 90%;
+    height: 2px;
+    background-color: @basic_green;
+    z-index: -1;
+
+    @media (min-width: @tablet) {
+      width: 100%;
+      top: 90px;
+    }
+  }
 }
 
 .additionally__wrapper {
-  @media (min-width: @tablet) {
-    padding: 0 70px;
-  }
-
   @media (min-width: @desktop) {
-    padding: 0 110px;
+    padding: 0 70px;
   }
 }
 
 .additionally__title {
   display: block;
-  padding-top: 23px;
-  padding-bottom: 34px;
+  margin-top: 23px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
+  background-color: @white;
+  width: calc(141 / 280 * 100%);
+  padding-right: 14px;
 
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 65px;
-    padding-bottom: 62px;
+    margin-top: 65px;
+    margin-bottom: 62px;
+    width: 211px;
+    padding: 0 40px;
   }
 }
 
@@ -37,6 +55,7 @@
 
   @media (min-width: @tablet) {
     grid-template-columns: 1fr 1fr;
+    padding: 0 40px;
   }
 
   @media (min-width: @desktop) {
@@ -60,6 +79,14 @@
 .additionally__caption {
   padding-left: 45px;
 
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &--disabled .additionally__checkbox {
+    border-color: #bababa;
+  }
+
   @media (min-width: @tablet) {
     padding-left: 59px;
   }
@@ -76,6 +103,10 @@
   margin-left: -45px;
   background-color: @white;
   border: 1px solid #d9d9d9;
+
+  &:hover {
+    border-color: #bababa;
+  }
 
   @media (min-width: @tablet) {
     margin-left: -59px;

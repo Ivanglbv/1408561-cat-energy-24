@@ -1,11 +1,20 @@
 .show-more {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url("/img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 30px;
 
   @media (min-width: @tablet) {
     border: 2px solid #f2f2f2;
     box-sizing: border-box;
+    background-image: url("/img/plus1.svg");
+    background-size: 60px;
+    background-position: center 50px;
   }
 }
 
@@ -19,14 +28,16 @@
   margin: 0;
 
   @media (min-width: @tablet) {
-    padding: 0 105px;
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0 93px;
     padding-top: 161px;
     text-align: center;
   }
 
   @media (min-width: @desktop) {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 54px;
+    padding-right: 53px;
   }
 }
 
@@ -42,16 +53,18 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 18px;
     margin: 0;
-    padding: 0 90px;
+    padding: 0 76px;
     padding-top: 23px;
     padding-bottom: 87px;
     text-align: center;
   }
 
   @media (min-width: @desktop) {
-    padding-left: 39px;
-    padding-right: 39px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 }
 
@@ -63,15 +76,27 @@
   background-color: @basic_grey;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  align-self: stretch;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
+  }
 
   @media (min-width: @tablet) {
     padding: 20px 79px;
     margin-bottom: 35px;
+    align-self: center;
   }
 
   @media (min-width: @desktop) {
     line-height: 20px;
     padding: 10px 39px;
-    margin-bottom: 41px;
+    margin-bottom: 39px;
   }
 }
