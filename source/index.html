@@ -2,9 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml">
@@ -21,9 +21,7 @@
           </picture>
         </a>
         <nav class="header__main-nav main-nav main-nav--opened">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active main-nav__link--color" href="index.html">Главная</a>
@@ -45,8 +43,14 @@
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <p class="promo__container-image">
             <picture>
-              <source media="(min-width: 1400px)" srcset="img/index-promo-desktop.png 1x, img/index-promo-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png 1x, img/index-promo-tablet@2x.png 2x">
+              <source media="(min-width: 1400px)" srcset="img/index-promo-desktop.avif, img/index-promo-desktop@2x.avif 2x">
+              <source media="(min-width: 1400px)" srcset="img/index-promo-desktop.webp, img/index-promo-desktop@2x.webp 2x">
+              <source media="(min-width: 1400px)" srcset="img/index-promo-desktop.png, img/index-promo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-promo-tablet.avif, img/index-promo-tablet@2x.avif 2x">
+              <source media="(min-width: 768px)" srcset="img/index-promo-tablet.webp, img/index-promo-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png, img/index-promo-tablet@2x.png 2x">
+              <source srcset="img/index-promo-mobile.avif, img/index-promo-mobile@2x.avif 2x">
+              <source srcset="img/index-promo-mobile.webp, img/index-promo-mobile@2x.webp 2x">
               <img class="promo__image" srcset="img/index-promo-mobile.png, img/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт Энерджи">
             </picture>
           </p>
@@ -58,18 +62,20 @@
         <div class="wrapper">
           <ul class="programs__list">
             <li class="programs__item">
-              <h3 class="programs__title title">похудение</h2>
+              <h3 class="programs__title title">
+                похудение
+              </h3>
               <p class="programs__text text">
-                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
-                Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="programs__link" href="#">каталог slim</a>
             </li>
             <li class="programs__item">
-              <h3 class="programs__title title">набор массы</h2>
+              <h3 class="programs__title title">
+                набор массы
+              </h3>
               <p class="programs__text text">
-                Заработать авторитет среди дворовых котов и даже собак?
-                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a class="programs__link" href="#">каталог pro</a>
             </li>
@@ -78,34 +84,29 @@
       </section>
       <section class="about-product">
         <div class="wrapper about-product__wrapper">
-          <h2 class="about-product__title title">Как это работает</h2>
+          <h2 class="about-product__title title">
+            Как это работает
+          </h2>
           <ul class="about-product__list">
             <li class="about-product__item">
               <p class="about-product__text text">
-                Функциональное питание
-                содержит только полезные
-                питательные вещества.
+                Функциональное питание содержит только полезные питательные вещества.
               </p>
             </li>
             <li class="about-product__item">
               <p class="about-product__text text">
-                Выпускается в виде порошка,
-                который нужно лишь залить
-                кипятком и готово.
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </p>
             </li>
             <li class="about-product__item">
               <p class="about-product__text text">
-                Замените один-два приема
-                обычной еды на наше
-                функциональное питание.
+                Замените один-два приема обычной еды на наше функциональное питание.
               </p>
             </li>
             <li class="about-product__item">
               <p class="about-product__text text">
-                Уже через месяц
-                наслаждайтесь изменениями
-                к лучшему <br>вашего питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему<br>
+                вашего питомца!
               </p>
             </li>
           </ul>
@@ -138,13 +139,21 @@
             <ul class="slider__list">
               <li class="slider__item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.avif, img/cat-fat@2x.avif 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.webp, img/cat-fat@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-fat.png, img/cat-fat@2x.png 2x">
+                  <source srcset="img/cat-fat-mobile.avif, img/cat-fat-mobile@2x.avif 2x">
+                  <source srcset="img/cat-fat-mobile.webp, img/cat-fat-mobile@2x.webp 2x">
                   <img class="slider__image slider__image--active" srcset="img/cat-fat-mobile.png, img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот до диеты Кэт Энерджи">
                 </picture>
               </li>
               <li class="slider__item">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.avif, img/cat-skinny@2x.avif 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.webp, img/cat-skinny@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-skinny.png, img/cat-skinny@2x.png 2x">
+                  <source srcset="img/cat-skinny-mobile.avif, img/cat-skinny-mobile@2x.avif 2x">
+                  <source srcset="img/cat-skinny-mobile.webp, img/cat-skinny-mobile@2x.webp 2x">
                   <img class="slider__image" srcset="img/cat-skinny-mobile.png, img/cat-skinny-mobile@2x.png 2x" width="243" height="232" alt="Кот после диеты Кэт Энерджи">
                 </picture>
               </li>
@@ -164,15 +173,13 @@
             приглашаем к&nbsp;сотрудничеству дилеров!
           </h2>
           <p class="footer__text text">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
         <div class="footer__wrapper-map">
-          <iframe class="footer__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637940205596!5m2!1sru!2sru"
-            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy">
+          <iframe
+            class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1637940205596!5m2!1sru!2sru"
+            width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
       </section>
