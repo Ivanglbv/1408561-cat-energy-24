@@ -6,9 +6,11 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/favicon/apple.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple.png">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="header">
@@ -20,8 +22,10 @@
             <img class="header__image-logo" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
-        <nav class="header__main-nav main-nav main-nav--opened">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="header__main-nav main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <ul class="main-nav__list list">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active main-nav__link--color" href="index.html">Главная</a>
@@ -58,7 +62,9 @@
         </div>
       </section>
       <section class="programs">
-        <h2 class="visually-hidden">Программы</h2>
+        <h2 class="visually-hidden">
+          Программы
+        </h2>
         <div class="wrapper">
           <ul class="programs__list">
             <li class="programs__item">
@@ -137,14 +143,14 @@
           </div>
           <div class="example__slider slider">
             <ul class="slider__list">
-              <li class="slider__item">
+              <li class="slider__item slider__item--active">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/cat-fat.avif, img/cat-fat@2x.avif 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-fat.webp, img/cat-fat@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-fat.png, img/cat-fat@2x.png 2x">
                   <source srcset="img/cat-fat-mobile.avif, img/cat-fat-mobile@2x.avif 2x">
                   <source srcset="img/cat-fat-mobile.webp, img/cat-fat-mobile@2x.webp 2x">
-                  <img class="slider__image slider__image--active" srcset="img/cat-fat-mobile.png, img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот до диеты Кэт Энерджи">
+                  <img class="slider__image" srcset="img/cat-fat-mobile.png, img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот до диеты Кэт Энерджи">
                 </picture>
               </li>
               <li class="slider__item">
@@ -159,8 +165,8 @@
               </li>
             </ul>
             <div class="slider__container-button">
-              <button class="slider__button" type="button">было</button>
-              <button class="slider__button" type="button">стало</button>
+              <button class="slider__button-was" type="button">было</button>
+              <button class="slider__button-became" type="button">стало</button>
             </div>
           </div>
         </div>
@@ -225,5 +231,6 @@
       </section>
     </footer>
     <script src="js/toggle.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

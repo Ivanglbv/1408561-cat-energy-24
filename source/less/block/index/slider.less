@@ -8,13 +8,15 @@
   }
 }
 
-.slider__image {
+.slider__item {
   display: none;
 
   &--active {
     display: block;
   }
+}
 
+.slider__image {
   @media (min-width: @tablet) {
     width: 592px;
     height: 511px;
@@ -71,11 +73,17 @@
       height: 8px;
       border: 13px solid @white;
       border-radius: 50%;
+      box-shadow: 0 0 0 1px #cdcdcd;
+
+      &:active {
+        box-shadow: 0 0 0 1px #68b738;
+      }
     }
   }
 }
 
-.slider__button {
+.slider__button-was,
+.slider__button-became {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -86,8 +94,17 @@
   text-transform: uppercase;
   color: #000000;
   border: none;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
   background-color: #eaeaea;
   padding: 15px 35px 0;
+
+  &:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border: none;
+  }
 
   @media (min-width: @tablet) {
     font-size: 20px;
