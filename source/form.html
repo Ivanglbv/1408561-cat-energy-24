@@ -20,7 +20,7 @@
             <img class="header__image-logo" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
-        <nav class="header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list list">
             <li class="main-nav__item">
@@ -48,21 +48,21 @@
             </p>
           </div>
         </section>
-        <section class="questionary">
+        <div class="questionary">
           <div class="questionary__wrapper wrapper">
             <fieldset class="information">
               <p class="information__wrap">
-                <label class="information__caption caption" for="">ИМЯ:*
+                <label class="information__caption caption">ИМЯ:*
                   <input class="information__input-name input" type="text" name="name" value="Барсик">
                 </label>
               </p>
               <p class="information__wrap">
-                <label class="information__caption caption" for="">Вес (кг):*
+                <label class="information__caption caption">Вес (кг):*
                   <input class="information__input-weight input" type="number" name="weight" value="7">
                 </label>
               </p>
               <p class="information__wrap">
-                <label class="information__caption caption" for="">Возраст (лет):
+                <label class="information__caption caption">Возраст (лет):
                   <input class="information__input-age input" type="number" name="age" value="7">
                 </label>
               </p>
@@ -92,22 +92,22 @@
               </div>
             </fieldset>
           </div>
-        </section>
+        </div>
         <fieldset class="contacts">
           <div class="contacts__wrapper wrapper">
-            <legent class="contacts__title">Контактные данные (владельца кота)</legent>
+            <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
             <div class="contacts__container">
               <p class="contacts__wrap">
-                <label class="contacts__caption caption">
-                  E-mail:* <input class="contacts__input input" type="email" name="email" value="kuklachev@gmail.com">
+                <label class="contacts__caption caption">E-mail:*
+                  <input class="contacts__input input" type="email" name="email" value="kuklachev@gmail.com">
                   <svg class="contacts__icon-email" width="19" height="14">
                     <use xlink:href="img/sprite.svg#icon-email"></use>
                   </svg>
                 </label>
               </p>
               <p class="contacts__wrap">
-                <label class="contacts__caption caption">
-                  Телефон:* <input class="contacts__input input input--erorr" type="tel" name="telephone" value="8 (960) 900-60-90">
+                <label class="contacts__caption caption">Телефон:*
+                  <input class="contacts__input input input--erorr" type="tel" name="telephone" value="8 (960) 900-60-90">
                   <svg class="contacts__icon-phone" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
@@ -118,13 +118,13 @@
         </fieldset>
         <fieldset class="comment">
           <div class="comment__wrapper wrapper">
-            <legent class="comment__title">Комментарий</legent>
+            <h2 class="comment__title">Комментарий</h2>
             <textarea class="comment__textarea">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
         <fieldset class="additionally">
           <div class="additionally__wrapper wrapper">
-            <legent class="additionally__title">Дополнительно</legent>
+            <h2 class="additionally__title">Дополнительно</h2>
             <ul class="additionally__list">
               <li class="additionally__item">
                 <label class="additionally__caption caption">
@@ -150,7 +150,8 @@
               <li class="additionally__item">
                 <label class="additionally__caption caption additionally__caption--disabled">
                   <input class="additionally__input" type="checkbox" name="product" value="vitamins" disabled="disabled">
-                  <span class="additionally__checkbox"></span> витамины
+                  <span class="additionally__checkbox"></span>
+                  витамины
                 </label>
               </li>
             </ul>
@@ -169,7 +170,8 @@
             приглашаем к&nbsp;сотрудничеству дилеров!
           </h2>
           <p class="footer__text text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="footer__wrapper-map">
@@ -179,46 +181,49 @@
           </iframe>
         </div>
       </section>
-      <section class="footer__desk">
+      <div class="footer__desk">
         <div class="footer__wrapper-desk wrapper">
           <a class="footer__logo" href="#">
-            <svg width="128" height="24">
+            <svg viewBox="0 0 128 24" width="128" height="24">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
           </a>
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#">
-                <svg class="footer__icon-vk" width="23" height="16">
+                <svg class="footer__icon-vk" viewBox="0 0 23 13" width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
+                <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <svg class="footer__icon-inst" width="16" height="16">
+                <svg class="footer__icon-inst" viewBox="0 0 16 16" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-inst"></use>
                 </svg>
+                <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <svg class="footer__icon-fb" width="22" height="22" fill="none">
+                <svg class="footer__icon-fb" viewBox="0 0 13 20" width="22" height="22" fill="none">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
+                <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
           </ul>
-          <a class="footer__copiright" href="#">
-            <svg class="footer__copiright-logo" width="113" height="16">
+          <a class="footer__copiright" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__copiright-logo" viewBox="0 0 113 16" width="113" height="16">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
-            <svg class="footer__copiright-icon" width="27" height="34">
+            <svg class="footer__copiright-icon" viewBox="0 0 27 34" width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
-      </section>
+      </div>
     </footer>
     <script src="js/toggle.js"></script>
   </body>

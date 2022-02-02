@@ -10,7 +10,7 @@
 
   @media (min-width: @tablet) {
     padding: 0 40px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: @desktop) {
@@ -36,16 +36,7 @@
 .information__input-weight,
 .information__input-age {
   height: 44px;
-  margin-left: 10px;
   flex-grow: 1;
-
-  &[type="text"] {
-    padding-left: 15px;
-  }
-
-  &[type="number"] {
-    padding-left: 15px;
-  }
 
   &[type="number"]::-webkit-inner-spin-button,
   &[type="number"]::-webkit-outer-spin-button {
@@ -59,6 +50,32 @@
   }
 }
 
+.information__input-name {
+  padding-left: 15px;
+  margin-left: 13px;
+
+  @media (min-width: @tablet) {
+    padding-left: 17px;
+    margin-left: 17px;
+  }
+}
+
+.information__input-weight {
+  padding-left: 16px;
+  margin-left: 16px;
+
+  @media (min-width: @tablet) {
+    padding-left: 17px;
+    margin-left: 21px;
+  }
+}
+
 .information__input-age {
-  margin-left: 9px;
+  padding-left: 15px;
+  margin-left: 15px;
+
+  @media (min-width: @tablet) {
+    padding-left: 18px;
+    margin-left: 18px;
+  }
 }

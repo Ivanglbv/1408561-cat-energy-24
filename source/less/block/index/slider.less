@@ -5,6 +5,13 @@
 
   @media (min-width: @tablet) {
     min-width: 592px;
+    padding-top: 85px;
+    padding-left: 75px;
+  }
+
+  @media (min-width: @desktop) {
+    min-width: 592px;
+    padding: 0;
   }
 }
 
@@ -34,7 +41,7 @@
     content: "";
     position: absolute;
     bottom: 3px;
-    left: 90px;
+    left: 98px;
     width: 85px;
     height: 14px;
     background-color: @white;
@@ -47,28 +54,30 @@
     content: "";
     position: absolute;
     bottom: 7px;
-    left: 95px;
-    width: 35px;
+    left: 103px;
+    width: 36px;
     height: 6px;
     background-color: #68b738;
     border-radius: 6px;
   }
 
   @media (min-width: @tablet) {
-    padding-top: 25px;
-    width: 592px;
+    padding-top: 18px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    min-width: 572px;
 
     &::before {
-      bottom: 10px;
-      left: 75px;
+      bottom: 13px;
+      left: 73px;
       width: 426px;
       height: 6px;
       background-color: #dcdcdc;
     }
 
     &::after {
-      bottom: -5px;
-      left: 260px;
+      bottom: -1px;
+      left: 270px;
       width: 8px;
       height: 8px;
       border: 13px solid @white;
@@ -78,6 +87,22 @@
       &:active {
         box-shadow: 0 0 0 1px #68b738;
       }
+    }
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+    padding-top: 25px;
+    min-width: 592px;
+
+    &::before {
+      bottom: 11px;
+      left: 85px;
+    }
+
+    &::after {
+      bottom: -3px;
+      left: 281px;
     }
   }
 }
@@ -94,22 +119,36 @@
   text-transform: uppercase;
   color: #000000;
   border: none;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
   background-color: #eaeaea;
-  padding: 15px 35px 0;
-
-  &:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  }
-
-  &:active {
-    border: none;
-  }
+  padding: 16px 40px 0;
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
     padding: 0;
     background-color: #eaeaea;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
+
+.slider__button-was {
+  @media (min-width: @desktop) {
+    margin-left: 15px;
+  }
+}
+
+
+.slider__button-became {
+  @media (min-width: @desktop) {
+    margin-right: 10px;
   }
 }
