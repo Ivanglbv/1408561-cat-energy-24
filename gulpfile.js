@@ -121,7 +121,7 @@ const server = (done) => {
 
 // Reload
 
-const reload = () => {
+const reload = (done) => {
   browser.reload();
   done();
 }
@@ -134,7 +134,7 @@ const watcher = () => {
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
-//Build
+// Build
 
 export const build = gulp.series(
   clean,

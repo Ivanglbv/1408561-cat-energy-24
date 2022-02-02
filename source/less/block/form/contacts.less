@@ -7,7 +7,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 42px;
     right: 0;
     width: 90%;
     height: 2px;
@@ -16,7 +16,11 @@
 
     @media (min-width: @tablet) {
       width: 100%;
-      top: 95px;
+      top: 26px;
+    }
+
+    @media (min-width: @desktop) {
+      top: 92px;
     }
   }
 }
@@ -29,6 +33,7 @@
 
 .contacts__title {
   display: block;
+  font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   margin-top: 26px;
@@ -40,10 +45,15 @@
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 71px;
-    margin-bottom: 76px;
+    margin-top: 5px;
+    margin-bottom: 75px;
     width: 512px;
     padding: 0 40px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: 70px;
+    margin-bottom: 75px;
   }
 }
 
@@ -55,6 +65,7 @@
   @media (min-width: @desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
@@ -63,10 +74,8 @@
   margin-bottom: 14px;
   position: relative;
 
-  &:last-child {
-    @media (min-width: @desktop) {
-      margin-left: 78px;
-    }
+  @media (min-width: @tablet) {
+    margin-bottom: 20px;
   }
 }
 
@@ -98,7 +107,7 @@
 
   &[type="tel"] {
     padding-left: 15px;
-    margin-left: 5px;
+    margin-left: 10px;
 
     @media (min-width: @tablet) {
       padding-left: 18px;
@@ -119,7 +128,7 @@
 
   @media (min-width: @tablet) {
     top: 19px;
-    right: 19px;
+    right: 14px;
   }
 }
 

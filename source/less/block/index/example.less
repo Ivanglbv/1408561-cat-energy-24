@@ -4,12 +4,12 @@
   @media (min-width: @tablet) {
     background-color: transparent;
     border-top: 1px solid #e6e6e6;
-    background-image: linear-gradient(to bottom, @white 60%, #eaeaea 60% 100%);
+    background-image: linear-gradient(to bottom, @white 57%, #eaeaea 57% 100%);
   }
 
   @media (min-width: @desktop) {
     border-top: none;
-    background-image: linear-gradient(to bottom, @white 30%, #eaeaea 30% 100%);
+    background-image: linear-gradient(to bottom, @white 28%, #eaeaea 28% 100%);
   }
 }
 
@@ -17,8 +17,9 @@
   display: grid;
 
   @media (min-width: @desktop) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
   }
 }
 
@@ -34,9 +35,13 @@
   padding-top: 25px;
 
   @media (min-width: @tablet) {
-    padding-top: 43px;
+    padding-top: 40px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 45px;
   }
 }
 
@@ -88,16 +93,23 @@
     flex-basis: 162px;
 
     &:first-child {
+      margin-right: 45px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &:first-child {
       margin-right: 42px;
     }
   }
 }
 
 .example__term {
-  background-color: #eaeaea;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  background-color: #eaeaea;
   margin: 0 auto;
   margin-top: -10px;
   order: 2;
@@ -106,7 +118,7 @@
 
   @media (min-width: @tablet) {
     background-color: @white;
-    width: 100px;
+    width: auto;
     padding: 0 10px;
     font-size: 14px;
     line-height: 14px;
@@ -134,10 +146,10 @@
   @media (min-width: @tablet) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 56px 25px;
+    padding: 15px 55px 17px;
 
     .example__box:nth-child(2) & {
-      padding: 15px 29px 25px;
+      padding: 15px 29px 21px;
     }
   }
 }
@@ -155,24 +167,32 @@
     font-size: 20px;
     text-align: right;
     margin: 0;
+    margin-top: 10px;
     padding: 0;
     padding-left: 90px;
+
+    & span {
+      margin-top: 10px;
+      display: inline-block;
+    }
   }
 
   @media (min-width: @desktop) {
+    margin: 0;
     padding: 0;
     padding-top: 55px;
 
     & span {
-      margin-left: 63px;
+      margin: 0;
+      margin-left: 60px;
     }
   }
 }
 
 .example__slider {
-  padding: 40px 0;
+  padding: 40px 0 45px;
 
   @media (min-width: @tablet) {
-    padding: 0 57px 56px 59px;
+    padding: 0;
   }
 }

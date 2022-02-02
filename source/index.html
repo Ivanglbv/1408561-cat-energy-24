@@ -22,7 +22,7 @@
             <img class="header__image-logo" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт Энерджи">
           </picture>
         </a>
-        <nav class="header__main-nav main-nav main-nav--opened main-nav--nojs">
+        <nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -53,9 +53,9 @@
               <source media="(min-width: 768px)" srcset="img/index-promo-tablet.avif, img/index-promo-tablet@2x.avif 2x">
               <source media="(min-width: 768px)" srcset="img/index-promo-tablet.webp, img/index-promo-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/index-promo-tablet.png, img/index-promo-tablet@2x.png 2x">
-              <source srcset="img/index-promo-mobile.avif, img/index-promo-mobile@2x.avif 2x">
-              <source srcset="img/index-promo-mobile.webp, img/index-promo-mobile@2x.webp 2x">
-              <img class="promo__image" srcset="img/index-promo-mobile.png, img/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт Энерджи">
+              <source media="(max-width: 767px)" srcset="img/index-promo-mobile.avif, img/index-promo-mobile@2x.avif 2x">
+              <source media="(max-width: 767px)" srcset="img/index-promo-mobile.webp, img/index-promo-mobile@2x.webp 2x">
+              <img class="promo__image" src="img/index-promo-mobile.png" srcset="img/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт Энерджи">
             </picture>
           </p>
           <a class="promo__button button" href="form.html">подобрать программу</a>
@@ -111,8 +111,7 @@
             </li>
             <li class="about-product__item">
               <p class="about-product__text text">
-                Уже через месяц наслаждайтесь изменениями к лучшему<br>
-                вашего питомца!
+                Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!
               </p>
             </li>
           </ul>
@@ -125,7 +124,7 @@
             <p class="example__text text">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
               Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
             </p>
             <div class="example__container-desk">
               <dl class="example__desk">
@@ -148,9 +147,9 @@
                   <source media="(min-width: 768px)" srcset="img/cat-fat.avif, img/cat-fat@2x.avif 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-fat.webp, img/cat-fat@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-fat.png, img/cat-fat@2x.png 2x">
-                  <source srcset="img/cat-fat-mobile.avif, img/cat-fat-mobile@2x.avif 2x">
-                  <source srcset="img/cat-fat-mobile.webp, img/cat-fat-mobile@2x.webp 2x">
-                  <img class="slider__image" srcset="img/cat-fat-mobile.png, img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот до диеты Кэт Энерджи">
+                  <source media="(max-width: 767px)" srcset="img/cat-fat-mobile.avif, img/cat-fat-mobile@2x.avif 2x">
+                  <source media="(max-width: 767px)" srcset="img/cat-fat-mobile.webp, img/cat-fat-mobile@2x.webp 2x">
+                  <img class="slider__image" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Кот до диеты Кэт Энерджи">
                 </picture>
               </li>
               <li class="slider__item">
@@ -158,9 +157,9 @@
                   <source media="(min-width: 768px)" srcset="img/cat-skinny.avif, img/cat-skinny@2x.avif 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-skinny.webp, img/cat-skinny@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-skinny.png, img/cat-skinny@2x.png 2x">
-                  <source srcset="img/cat-skinny-mobile.avif, img/cat-skinny-mobile@2x.avif 2x">
-                  <source srcset="img/cat-skinny-mobile.webp, img/cat-skinny-mobile@2x.webp 2x">
-                  <img class="slider__image" srcset="img/cat-skinny-mobile.png, img/cat-skinny-mobile@2x.png 2x" width="243" height="232" alt="Кот после диеты Кэт Энерджи">
+                  <source media="(max-width: 767px)" srcset="img/cat-skinny-mobile.avif, img/cat-skinny-mobile@2x.avif 2x">
+                  <source media="(max-width: 767px)" srcset="img/cat-skinny-mobile.webp, img/cat-skinny-mobile@2x.webp 2x">
+                  <img class="slider__image" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile@2x.png 2x" width="243" height="232" alt="Кот после диеты Кэт Энерджи">
                 </picture>
               </li>
             </ul>
@@ -179,7 +178,8 @@
             приглашаем к&nbsp;сотрудничеству дилеров!
           </h2>
           <p class="footer__text text">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="footer__wrapper-map">
@@ -189,48 +189,50 @@
           </iframe>
         </div>
       </section>
-      <section class="footer__desk">
+      <div class="footer__desk">
         <div class="footer__wrapper-desk wrapper">
           <a class="footer__logo" href="#">
-            <svg width="128" height="24">
+            <svg viewBox="0 0 128 24" width="128" height="24">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
           </a>
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#">
-                <svg class="footer__icon-vk" width="23" height="16">
+                <svg class="footer__icon-vk" viewBox="0 0 23 13" width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
+                <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <svg class="footer__icon-inst" width="16" height="16">
+                <svg class="footer__icon-inst" viewBox="0 0 16 16" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-inst"></use>
                 </svg>
+                <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer__item">
               <a href="#">
-                <svg class="footer__icon-fb" width="22" height="22" fill="none">
+                <svg class="footer__icon-fb" viewBox="0 0 13 20" width="22" height="22" fill="none">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
+                <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
           </ul>
-          <a class="footer__copiright" href="#">
-            <svg class="footer__copiright-logo" width="113" height="16">
+          <a class="footer__copiright" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__copiright-logo" viewBox="0 0 113 16" width="113" height="16">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
-            <svg class="footer__copiright-icon" width="27" height="34">
+            <svg class="footer__copiright-icon" viewBox="0 0 27 34" width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
-      </section>
+      </div>
     </footer>
     <script src="js/toggle.js"></script>
-    <script src="js/slider.js"></script>
   </body>
 </html>
