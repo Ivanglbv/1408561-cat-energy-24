@@ -16,7 +16,7 @@
 }
 
 .slider__item {
-  display: none;
+    display: none;
 
   &--active {
     display: block;
@@ -50,6 +50,10 @@
     border-radius: 6px;
   }
 
+  &.button-on::after {
+    transform: translateX(100%);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -59,6 +63,7 @@
     height: 6px;
     background-color: #68b738;
     border-radius: 6px;
+    transform: translateX(0);
   }
 
   @media (min-width: @tablet) {
@@ -73,6 +78,10 @@
       width: 426px;
       height: 6px;
       background-color: #dcdcdc;
+    }
+
+    &.button-on::after {
+      transform: translateX(50%);
     }
 
     &::after {
@@ -121,6 +130,7 @@
   border: none;
   background-color: #eaeaea;
   padding: 16px 40px 0;
+  cursor: pointer;
 
   @media (min-width: @tablet) {
     font-size: 20px;
